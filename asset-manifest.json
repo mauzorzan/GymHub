@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/GymHub/static/css/main.73f5ba94.css",
-    "main.js": "/GymHub/static/js/main.32cc319d.js",
-    "static/media/banner.png": "/GymHub/static/media/banner.5209b5e92a864ca0c615.png",
-    "static/media/gym.png": "/GymHub/static/media/gym.6e701417c428e2fbc267.png",
+    "main.css": "/GymHub/static/css/main.1f9daa9f.css",
+    "main.js": "/GymHub/static/js/main.81609902.js",
+    "static/media/banner.png": "/GymHub/static/media/banner.e52f672eb986c9246f1f.png",
+    "static/media/neck.png": "/GymHub/static/media/neck.0667adee99f71eba3217.png",
+    "static/media/upper legs.png": "/GymHub/static/media/upper legs.d55952121f40645a6772.png",
+    "static/media/lower legs.png": "/GymHub/static/media/lower legs.295877605d2f3d5cf987.png",
+    "static/media/chest.png": "/GymHub/static/media/chest.f6ab2f91981460156f62.png",
+    "static/media/cardio.png": "/GymHub/static/media/cardio.6434ddca369ad6ceb4df.png",
+    "static/media/all.png": "/GymHub/static/media/all.6e701417c428e2fbc267.png",
+    "static/media/lower arms.png": "/GymHub/static/media/lower arms.1f1465867d53da6ba3b5.png",
+    "static/media/upper arms.png": "/GymHub/static/media/upper arms.1f1465867d53da6ba3b5.png",
     "static/media/Logo.webp": "/GymHub/static/media/Logo.c26ce5e66cc229573337.webp",
     "index.html": "/GymHub/index.html",
-    "main.73f5ba94.css.map": "/GymHub/static/css/main.73f5ba94.css.map",
-    "main.32cc319d.js.map": "/GymHub/static/js/main.32cc319d.js.map"
+    "main.1f9daa9f.css.map": "/GymHub/static/css/main.1f9daa9f.css.map",
+    "main.81609902.js.map": "/GymHub/static/js/main.81609902.js.map"
   },
   "entrypoints": [
-    "static/css/main.73f5ba94.css",
-    "static/js/main.32cc319d.js"
+    "static/css/main.1f9daa9f.css",
+    "static/js/main.81609902.js"
   ]
 }
