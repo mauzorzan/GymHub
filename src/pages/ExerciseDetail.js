@@ -1,11 +1,11 @@
-import React, { useEffect, useState} from 'react'
-import { useParams } from 'react-router-dom'
-import { Box } from '@mui/material'
-import Detail from '../components/Detail'
-import ExerciseVideo from '../components/ExerciseVideo'
-import SimilarExercises from '../components/SimilarExercises'
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { Box } from '@mui/material';
 
-import { exerciseOptions, fetchData, youtubeOptions} from '../utils/fetchData'
+import { exerciseOptions, fetchData, youtubeOptions } from '../utils/fetchData';
+import Detail from '../components/Detail';
+import ExerciseVideos from '../components/ExerciseVideo';
+import SimilarExercises from '../components/SimilarExercises';
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
@@ -37,13 +37,15 @@ const ExerciseDetail = () => {
     fetchExercisesData();
   }, [id]);
 
-  return (
-    <Box>
-      <Detail exerciseDetail={exerciseDetail}/>
-      <ExerciseVideo exerciseVideos={exerciseVideos} name={exerciseDetail.name}/>
-      <SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises}/>
-    </Box>
-  )
-}
+  if (!exerciseDetail) return <div>No Data</div>;
 
-export default ExerciseDetail
+  return (
+    <Box sx={{ mt: { lg: '96px', xs: '60px' } }}>
+      <Detail exerciseDetail={exerciseDetail} />
+      <ExerciseVideos exerciseVideos={exerciseVideos} name={exerciseDetail.name} />
+      <SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises} />
+    </Box>
+  );
+};
+
+export default ExerciseDetail;
